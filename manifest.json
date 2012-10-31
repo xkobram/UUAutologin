@@ -1,0 +1,14 @@
+{
+  "name": "UU autologin",
+  "version": "0.2",
+  "manifest_version": 2,
+  "description": "The first extension that I made. Logins to UU",    
+  "content_scripts": [
+    {
+      "matches": ["https://uu.unicornuniverse.eu/gate/*"],
+      "css": ["style.css"],
+      "all_frames": true,
+      "js": ["jquery-1.8.2.min.js", "login.js"]
+    }
+  ]  
+}
